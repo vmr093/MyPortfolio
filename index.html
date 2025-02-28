@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,31 +28,14 @@
     <!-- Fill content with the URL of this portfolio you'll host -->
     <meta property="og:url" content="https://devfolio.js.org/" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
+    <meta property="og:title" content="Viola Ranjha | Software Engineer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
+    <meta property="og:description" content="Viola Ranjha - Full Stack Software Engineer" />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
       property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Made using DevFolio Template"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
+      content="https://devfolio.js.org/assets/Violafolio.png"
     />
 
     <!-- link tags -->
@@ -74,8 +56,34 @@
       type="text/javascript"
       src="./javascript/scrollveal.js"
     ></script>
-
-
+    
+    <!-- Modal CSS -->
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- Hero Section -->
@@ -87,7 +95,7 @@
           a Full-Stack Engineer on a mission to make the web a better place!
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+          <a class="cta-btn cta-btn--hero" href="mailto:ranjha.viola@gmail.com">Get in touch</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -99,7 +107,7 @@
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">A little bit about me</h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
             <img
@@ -112,13 +120,13 @@
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Number cruncher turned coder, I am passionate about building sleek, high-performing web applications. I specialize in JavaScript, React, Python, Django, Express, MongoDB, and PostgreSQL, crafting both intuitive UIs and robust backend systems.
+              Number cruncher turned coder, I am passionate about building sleek, high-performing web applications. I specialize in JavaScript, React, Python, Django, Express, MongoDB, and PostgreSQL, crafting both intuitive UIs and robust backend systems. Ive received my certificate from General Assembly's Full Stack Engineering program.
             </p>
             <p class="about-wrapper__info-text">
-              When I'm not coding, you can find me exploring the great outdoors, baking, or reading a good book. I'm always looking for new opportunities to learn and grow!
+              When I'm not coding, you can find me exploring the great outdoors, baking, reading a good book, or fussing over my cat Nala. I'm always looking for new opportunities to learn and grow!
             </p>
             <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+              <a href="img/resume.jpg" class="cta-btn cta-btn--resume" target="_blank">View Resume</a>
             </span>
           </div>
         </div>
@@ -135,22 +143,19 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">SkinTea</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                SkinTea is a platform for skincare, makeup, and hair product enthusiasts to share their experiences. With the growing interest in skincare, this application provides a space to post real reviews, tips, and product recommendations.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://skintea.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/vmr093/SkinTea-App" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
@@ -160,7 +165,7 @@
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/SkinTea.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -175,22 +180,19 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">Potter Pairs</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                My very first project! A Harry Potter themed memory game in which the user will have limited time to flip the cards. 
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://vmr093.github.io/HP-Memory-Game/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/vmr093/HP-Memory-Game" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
@@ -200,7 +202,7 @@
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/HP.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -215,22 +217,19 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">LitLibrary</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                LitLibrary is a web application designed for book lovers who want to track, manage, and organize their reading journey. Whether you're a casual reader or a dedicated bookworm, LitLibrary provides an intuitive platform to add, categorize, and favorite books all in one place.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://litlibrary-0f2b9f9cbeea.herokuapp.com/books/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/vmr093/LitLibrary" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
@@ -240,7 +239,7 @@
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/LitLibrary.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -261,8 +260,8 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">Would you like to get in touch?</p>
+          <a href="mailto:ranjha.viola@gmail.com" class="cta-btn cta-btn--resume">Email Me</a>
         </div>
       </div>
     </section>
@@ -276,31 +275,7 @@
         </a>
         <div class="social-links">
           <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a>
-          <a
-            href="#!"
+            href="https://www.linkedin.com/in/viola-ranjha-858844133/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -308,7 +283,7 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/vmr093"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
@@ -318,22 +293,40 @@
         </div>
         <hr />
         <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+           <br />Made with &hearts; by Viola Ranjha
         </p>
       </div>
     </footer>
     <!-- END Footer Section -->
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="resumeImg">
+    </div>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear()
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    
+    <!-- Modal JavaScript -->
+    <script>
+      document.querySelectorAll('.cta-btn--resume').forEach(function(btn) {
+        if(btn.getAttribute('href') === 'img/resume.jpg'){
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var modal = document.getElementById('modal');
+            var modalImg = document.getElementById('resumeImg');
+            modal.style.display = "block";
+            modalImg.src = "./assets/resume.png"
+          });
+        }
+      });
+      document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('modal').style.display = "none";
+      });
+    </script>
   </body>
 </html>
