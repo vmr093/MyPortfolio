@@ -48,8 +48,8 @@ I love building sleek, **interactive web applications** using:
 ---
 
 ## ✉️ Contact Me  
-📧 **Email:** [your-email@example.com](mailto:ranjha.viola@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/yourname](https://www.linkedin.com/in/viola-ranjha-858844133/)  
+📧 **Email:** [ranjha.viola@gmail.com](mailto:ranjha.viola@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/ViolaRanjha](https://www.linkedin.com/in/viola-ranjha-858844133/)  
 📂 **Portfolio:** [vmr093.github.io/ViolaRanjha](https://vmr093.github.io/ViolaRanjha/)  
 
 📌 **Let’s connect! I’m open to collaborations, projects, and full-time opportunities!** 🚀  
