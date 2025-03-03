@@ -66,3 +66,43 @@ nav ul li a {
 nav ul li a:hover {
     color: #56ab2f;
 }
+
+
+.project-wrapper__more {
+    margin-top: 7rem; /* Adjust spacing below last project */
+    text-align: left; /* Align to the left */
+  }
+  
+  .project-wrapper__text .project-wrapper__more {
+    margin-top: 4rem; /* Extra space below "Source Code" button */
+  }
+  
+  /* Ensure the button is aligned left under the existing buttons */
+/* Keep "See Live" and "Source Code" side by side */
+.project-wrapper__text-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  /* Style for the "View All Projects" button */
+.project-wrapper__more-btn {
+    font-size: 1.4rem; /* Increase font size */
+    padding: 14px 28px; /* Bigger button */
+    margin-top: 1.5rem; /* Push it down */
+    width: fit-content; /* Prevent full width */
+    border: 2px solid black; /* Black outline */
+    color: #00ff00; /* Green text */
+    background: transparent; /* Transparent background */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .project-wrapper__more-btn:hover {
+    background: black; /* Black background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  
+  
