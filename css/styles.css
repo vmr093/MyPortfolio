@@ -11,6 +11,7 @@ body {
     background-color: #f9f9f9;
     text-align: center;
     line-height: 1.5;
+    padding-top: 100px; /* Adjust based on navbar height */
 }
 
 /* Container Styling */
@@ -187,4 +188,22 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #56ab2f;
+}
+
+/* 📱 MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Allows items to move to the next line if needed */
+        justify-content: center; /* Center-aligns items */
+        gap: 10px; /* Adds spacing between items */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adds vertical spacing */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Slightly smaller font size for mobile */
+        padding: 0.6rem; /* Adjusts spacing for better touch experience */
+    }
 }
