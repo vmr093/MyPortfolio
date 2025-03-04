@@ -32,7 +32,7 @@
     border-color: black;
 }
 
-/* Navigation Bar */
+/* General Navbar Styles */
 nav {
     background-color: black;
     padding: 1rem 0;
@@ -43,16 +43,30 @@ nav {
     z-index: 1000;
 }
 
+/* Navbar container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center align links */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Default Navigation Links */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    gap: 15px;
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -61,11 +75,22 @@ nav ul li a {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     transition: color 0.3s;
+    white-space: nowrap; /* Prevents text wrapping inside links */
 }
 
-nav ul li a:hover {
-    color: #56ab2f;
+/* Ensure proper fit on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px; /* Reduce spacing between items */
+        padding: 0 10px; /* Add padding to prevent edge cutoffs */
+    }
+
+    nav ul li a {
+        font-size: 1.4rem; /* Slightly smaller font to fit */
+        padding: 0.4rem 0.8rem; /* Adjust padding to keep links compact */
+    }
 }
+
 
 
 .project-wrapper__more {
