@@ -60,6 +60,35 @@
         .back-btn a:hover {
             background-color: #0056b3;
         }
+
+                /* Blog post title - Left align */
+                article h1 {
+            font-size: 50px; /* Adjust size */
+            font-weight: bold;
+            text-align: left; /* Align to the left */
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        /* Gradient line under the title */
+        article h1::after {
+            content: "";
+            display: block;
+            width: 30%; /* Stretches the full width */
+            height: 4px; /* Thickness of the line */
+            background: linear-gradient(to right, #007bff, #00c3ff); /* Blue gradient */
+            margin-top: 5px; /* Space between title and line */
+        }
+
+        /* Date Styling - Left Align */
+        article time {
+            display: block;
+            font-size: 20px;
+            color: #6c757d; /* Light gray for readability */
+            font-weight: bold;
+            text-align: left; /* Align to the left */
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
