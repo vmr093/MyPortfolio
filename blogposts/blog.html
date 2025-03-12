@@ -121,6 +121,72 @@
             color: #555;
         }
 
+        /* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce side padding for smaller screens */
+    }
+
+    h1#header {
+        font-size: 42px; /* Reduce header size */
+        padding: 30px;
+    }
+
+    .article-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack articles vertically */
+        gap: 20px;
+    }
+
+    article {
+        padding: 20px; /* Adjust padding for readability */
+        height: auto; /* Let height expand dynamically */
+        border-radius: 20px; /* Less aggressive border radius */
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 100px;
+        height: auto;
+        margin: 0 auto 10px; /* Center image */
+        display: block;
+    }
+
+    .img-wrapper img {
+        width: 100px; /* Make images smaller */
+        height: auto;
+    }
+
+    h1 {
+        font-size: 18px; /* Reduce title size for smaller screens */
+        height: auto;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center; /* Center-align text */
+    }
+
+    /* Grid View Adjustments (Square Button Clicked) */
+    .bloc {
+        flex-direction: column; /* Keep articles stacked on mobile */
+        align-items: center;
+    }
+
+    .bloc article {
+        max-width: 100%; /* Full width for better readability */
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center; /* Center buttons */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
     </style>
 </head>
 <body>
