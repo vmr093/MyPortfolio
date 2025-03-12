@@ -83,6 +83,34 @@
         font-size: 40px;
         cursor: pointer;
       }
+
+      .blog-image {
+        display: block;
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+        .blog {
+          margin-bottom: 150px; /* Adds extra space to prevent overlap */
+    }
+
+      .blog-wrapper {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .blog-wrapper__text {
+        margin-top: 20px;
+        font-size: 1.7rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+
     </style>
   </head>
   <body>
@@ -92,6 +120,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -266,7 +295,27 @@
     </section>
     <!-- End Projects Section -->
 
-   
+  <!-- Blog Section -->
+<!-- Blog Section -->
+<section id="blog" class="blog">
+  <div class="container">
+    <h2 class="section-title" style="text-align: center;">Hello World</h2>
+    <div class="blog-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+      <img src="./assets/blog.jpg" alt="Blog Section Image" class="blog-image" 
+      data-tilt style="max-width: 40%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" /> 
+      <div class="blog-content" style="max-width: 50%; text-align: left;">
+        <p class="blog-wrapper__text">
+          Welcome to my blog! Here, I share insights on software development, 
+          coding best practices, project experiences, and the latest in tech. 
+          Stay tuned for new posts!
+        </p>
+        <a href="blogposts/blog.html" class="cta-btn cta-btn--hero">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END Blog Section -->
+
 
     <!-- Contact Section -->
     <section id="contact">

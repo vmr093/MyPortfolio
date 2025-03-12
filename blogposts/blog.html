@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0 100px 100px;
+            background-color: #CDE !important;
+        }
+        h1#header {
+            text-align: center;
+            padding: 50px;
+            font-size: 62px;
+            font-family: "Pacifico", cursive;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+        }
+        .article-wrapper {
+            transition: width .4s;
+        }
+        article {
+            position: relative;
+            padding-left: 180px;
+            padding-right: 75px;
+            height: 150px;
+            margin-bottom: 30px;
+            background-color: #FFF;
+            border-radius: 150px;
+            cursor: pointer;
+        }
+        .img-wrapper {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border-radius: 100px;
+            background-color: #CDE;
+            padding: 10px;
+            z-index: 1000;
+            transition: all .2s;
+
+        }
+        .img-wrapper img {
+            border-radius: 100px;
+            transition: all .2s;
+            width: 150px;
+        }
+        h1 {
+            height: 75px;
+            line-height: 75px;
+            font-size: 24px;
+            border-bottom: 2px solid #CDE;
+            color: #428bca;
+            transition: all .4s;
+        }
+        p {
+            color: #888;
+        }
+        a.more {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            line-height: 150px;
+            text-align: center;
+            width: 100%;
+            background-color: #FFF;
+            font-size: 48px;
+            font-style: italic;
+            opacity: 0;
+            color: #428bca !important;
+            transition: all .4s;
+            border-radius: 150px;
+            font-family: "Pacifico", cursive;
+            text-shadow: 0 1px 1px #AAA;
+            text-decoration: none !important;
+        }
+        article:hover .img-wrapper {
+            padding: 5px;
+            transform: rotate(5deg);
+        }
+        article:hover a.more {
+            opacity: 1;
+        }
+        .btn-group {
+            margin-bottom: 20px;
+        }
+
+        /* Adjust styles when switching to grid view */
+        .bloc article {
+            height: auto; /* Allow height to adjust dynamically */
+            border-radius: 10px; /* Keep rounded edges minimal for grid */
+            padding: 20px; /* Add spacing */
+            text-align: center; /* Center text in grid */
+        }
+
+        /* Make images smaller in grid view */
+        .bloc .img-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        /* Adjust font size for better fit */
+        .bloc h1 {
+            font-size: 20px;
+            height: auto;
+            line-height: 1.3;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #CDE;
+        }
+
+        .bloc p {
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header" class="text-primary">My Blog</h1>
+    
+    <div class="container list-article">
+        <div class="btn-group pull-right" id="switch-view">
+            <button class="btn btn-primary">
+                <span class="icon-th-large"></span>
+            </button>
+            <button class="btn btn-primary active">
+                <span class="icon-th-list"></span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-xs-12 article-wrapper">
+                <article>
+                    <a href="post1.html" class="more">more</a>
+                    <div class="img-wrapper"><img src="http://lorempixel.com/150/150/fashion" alt="" /></div>
+                    <h1>Graduating from General Assembly: 9 Months of Code, Coffee, and Growth</h1>
+                    <p>Nine months ago, I took the leap from finance and accounting into the world of full-stack software engineering. I signed up for General Assembly’s Software Engineering Bootcamp, not fully knowing what I was getting myself into—but let me tell you, it was one of the hardest, most rewarding experiences of my life.</p>
+                </article>
+                <article>
+                    <a href="post2.html" class="more">more</a>
+                    <div class="img-wrapper"><img src="http://lorempixel.com/150/150/fashion" alt="" /></div>
+                    <h1>The Job Hunt: Landing My First Software Engineering Role</h1>
+                    <p>Graduating from General Assembly was a huge milestone, but let’s be honest—the real challenge starts **after** the bootcamp. Now, I’m diving into the world of job applications, technical interviews, and LinkedIn networking.</p>
+                </article>
+                <article>
+                    <a href="post3.html" class="more">more</a>
+                    <div class="img-wrapper"><img src="http://lorempixel.com/150/150/fashion" alt="" /></div>
+                    <h1>Modern Web Design: Animations, Parallax & More</h1>
+                    <p>Web design has evolved so much beyond static pages. Today, we’re seeing **smooth animations, engaging micro-interactions, and immersive scrolling effects** that make websites feel truly alive.</p>
+                </article>
+            </div>
+            <div class="text-center" style="margin-top: 20px;">
+                <a href="../../index.html" class="btn btn-primary">&#8592; Back to Home</a>
+            </div>
+                    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#switch-view").click(function() {
+                $(this).find("button").toggleClass("active");
+                $(".article-wrapper").toggleClass("bloc col-xs-12 col-xs-4");
+            });
+        });
+    </script>
+</body>
+</html>

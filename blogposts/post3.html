@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Design: Animations, Parallax & More</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Figtree', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        time {
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .blog-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-btn a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back-btn a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="post">
+            <h1>Modern Web Design: Animations, Parallax & More</h1>
+            <time datetime="2025-03-12"><em>March 12, 2025</em></time>
+
+            <img src="../assets/webdesign.png" alt="Modern Web Design" class="blog-image">
+            <p><small>(Image Credit: Unsplash)</small></p>
+
+            <h2>Bringing Websites to Life</h2>
+            <p>Web design has evolved so much beyond static pages. Today, we’re seeing **smooth animations, engaging micro-interactions, and immersive scrolling effects** that make websites feel truly alive.</p>
+
+            <p>Recently, I’ve been exploring modern web design techniques like **parallax scrolling, GSAP animations, responsive UI/UX, and dynamic API integrations**—and I’m obsessed! Let’s break it all down.</p>
+
+            <h2>Parallax Scrolling: Adding Depth & Motion</h2>
+            <img src="../assets/parallax.png" alt="Parallax Scrolling Effect" class="blog-image">
+            <p><small>(See it live  <a href="https://www.google.com/search?q=parallax+firewatch+example&sca_esv=1a9c224e5a61e56f&rlz=1C5CHFA_enUS954US954&sxsrf=AHTn8zqr1M2iG6Gvk2vYfNz3Ji4ezFSdNg%3A1741811926017&ei=1vDRZ9RotOLA3g_btpnYDg&ved=0ahUKEwjUq_aIs4WMAxU0MdAFHVtbBusQ4dUDCBA&uact=5&oq=parallax+firewatch+example&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIhpwYXJhbGxheCBmaXJld2F0Y2ggZXhhbXBsZTIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBUiML1DrCFiFLnABeAGQAQCYAaQBoAHzFaoBBDkuMTa4AQPIAQD4AQGYAhqgAukWwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIEECMYJ8ICCxAuGIAEGJECGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICExAuGIAEGLEDGNEDGEMYxwEYigXCAhQQLhiABBiRAhjRAxjHARjJAxiKBcICChAuGIAEGEMYigXCAgsQABiABBiSAxiKBcICDRAAGIAEGLEDGEMYigXCAgsQLhiABBixAxiDAcICDhAAGIAEGJECGLEDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICCxAuGIAEGLEDGNQCwgIFEAAYgATCAggQLhiABBixA8ICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCBAuGIAEGOUEwgILEC4YgAQYxwEYrwHCAiMQLhiABBiXBRjcBBjeBBjgBBj0AxjxAxj1Axj2Axj3A9gBAcICBhAAGBYYHsICCxAAGIAEGIYDGIoFwgIFECEYqwLCAgUQIRigAZgDAIgGAZAGCLoGBggBEAEYFJIHBDcuMTmgB-isAQ&sclient=gws-wiz-serp#fpstate=ive&vld=cid:488f4f34,vid:kTk15v5S-II,st:0" target="_blank">
+                here)</a></small></p>
+
+            <p>Parallax scrolling is one of my favorite effects. It creates an illusion of depth by making **background elements move at a different speed than foreground elements** when scrolling.</p>
+
+            <p>I’m currently experimenting with **parallax effects** for my <strong>High Altitude</strong> project to make the UI feel **dynamic and engaging**. It’s a simple yet powerful trick that instantly makes a site feel modern.</p>
+
+            <h2>GSAP: The Magic Behind Smooth Animations</h2>
+            <img src="../assets/GASP.png" alt="GSAP Animation" class="blog-image">
+            <p><small>(GSAP lets you create silky-smooth animations.)</small></p>
+
+            <p>One of the coolest things I’ve learned is using <a href="https://greensock.com/gsap/" target="_blank">GSAP (GreenSock Animation Platform)</a>. GSAP is a JavaScript library that lets you create **beautiful animations** with ease.</p>
+
+            <p>Why I love GSAP:</p>
+            <ul>
+                <li>🔥 **Super smooth animations** (way better than CSS animations!)</li>
+                <li>🔥 **Optimized performance** (no lag, even on mobile)</li>
+                <li>🔥 **Works well with ScrollTrigger** for **scroll-based effects**</li>
+            </ul>
+
+            <p>For example, I’m adding **fade-ins, slide effects, and hover animations** to make my projects feel interactive and **fun to explore**.</p>
+
+            <h2>Responsive UI/UX: Designing for All Devices</h2>
+            <img src="../assets/responsivedesign.png" alt="Responsive Web Design" class="blog-image">
+            <p><small>(Making sure designs look great everywhere!)</small></p>
+
+            <p>There’s nothing worse than a website that **looks great on a laptop but completely breaks on mobile**. That’s why I’ve been focusing on **responsive design**—making sure my layouts work on every screen size.</p>
+
+            <p>Some key techniques I’ve learned:</p>
+            <ul>
+                <li>✅ Using **CSS Grid & Flexbox** for flexible layouts</li>
+                <li>✅ Implementing **media queries** to adjust styles for different screens</li>
+                <li>✅ Prioritizing **mobile-first design** for better performance</li>
+            </ul>
+
+            <p>I’ve also been **optimizing images and assets** so that my sites **load fast** while still looking crisp.</p>
+
+            <h2>Dynamic Content with APIs</h2>
+            <p>Another game-changer has been learning how to **fetch real-time data from APIs** to display dynamic content.</p>
+
+            <p>For my LitLibrary project, I’m integrating **Google Books API** to fetch book details like:</p>
+            <ul>
+                <li>📚 Book summaries</li>
+                <li>⭐ Average ratings</li>
+                <li>📖 Number of pages</li>
+            </ul>
+
+            <p>This takes my project **to the next level**, making it feel **more interactive and useful** for users.</p>
+
+            <h2>Final Thoughts</h2>
+            <blockquote>
+                ✨ **"Modern web design is all about creating experiences, not just pages."** ✨
+            </blockquote>
+
+            <p>Learning about **animations, responsive UI/UX, and API integrations** has completely changed how I approach web development. I can’t wait to keep experimenting and applying these concepts to my projects.</p>
+
+            <p>If you’re interested in these topics, I highly recommend checking out <a href="https://greensock.com/gsap/" target="_blank">GSAP</a> and exploring different **modern design trends**. Web development is more exciting than ever! 🚀</p>
+
+            <h2>📢 Let’s Connect!</h2>
+            <p>Have you tried any of these design techniques? Let’s chat! Connect with me on <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> or check out my portfolio <a href="../index.html">here</a>.</p>
+
+        </article>
+
+        <!-- Back to Blog Button -->
+        <div class="back-btn">
+            <a href="../blogposts/blog.html">&#8592; Back to Blog</a>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="back-btn">
+            <a href="../index.html">&#8592; Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
